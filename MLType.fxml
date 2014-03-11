@@ -1,0 +1,37 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Ellipse?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" styleClass="root">
+
+    <stylesheets>
+        <URL value="@css.css"/>
+    </stylesheets>
+
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3">
+        <Text id="firstTitle" text="AI Programming"/>
+    </HBox>
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="3">
+        <Text id="secondTitle" underline="true" text="Tool Kit"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="3">
+        <Text id="Choose the type of Machine learning technique"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="3">
+        <Button text="Clustering" onAction="#clustering"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="3">
+        <Button text="Train and Predict" onAction="#predict"/>
+    </HBox>
+
+    <HBox alignment="BOTTOM_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="7">
+        <Button text="Back" onAction="#file"/>
+    </HBox>
+</GridPane>
