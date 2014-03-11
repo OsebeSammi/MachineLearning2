@@ -1,0 +1,33 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Ellipse?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" styleClass="root">
+
+    <stylesheets>
+        <URL value="@css.css"/>
+    </stylesheets>
+
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3">
+        <Text id="firstTitle" text="AI Programming"/>
+    </HBox>
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="3">
+        <Text id="secondTitle" underline="true" text="Tool Kit"/>
+    </HBox>
+
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="3">
+        <TextField fx:id="input1" promptText="enter the first input"/>
+    </HBox>
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="3">
+        <TextField fx:id="input2"  promptText="enter the second input"/>
+    </HBox>
+
+    <HBox alignment="BOTTOM_RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="7">
+    <Button text="Predict" onAction="#predictRun"/>
+    </HBox>
+
+</GridPane>
