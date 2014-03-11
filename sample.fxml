@@ -1,0 +1,38 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Ellipse?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" styleClass="root">
+
+    <stylesheets>
+        <URL value="@css.css"/>
+    </stylesheets>
+
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3">
+        <Text id="firstTitle" text="AI Programming"/>
+    </HBox>
+    <HBox alignment="TOP_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="3">
+        <Text id="secondTitle" underline="true" text="Tool Kit"/>
+    </HBox>
+
+
+    <Text id="members" text="Group Members" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+
+    <Text text="Echakara David" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Text text="P15/1341/2011" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <Text text="Justa Muriuki" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Text text="P15/2313/2011" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+    <Text text="Osebe Mogaka" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Text text="P15/1257/2011" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+    <HBox alignment="BOTTOM_RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="7">
+        <Button text="START" onAction="#file"/>
+    </HBox>
+
+</GridPane>
