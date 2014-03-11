@@ -1,0 +1,46 @@
+.root
+{
+    -fx-background-image: url("grey.jpg");
+}
+
+#firstTitle
+{
+    -fx-font-size: 600%;
+}
+
+#secondTitle
+{
+    -fx-font-size: 500%;
+    -fx-font-style: italic;
+}
+
+#members
+{
+    -fx-font-size: 300%;
+}
+
+.text
+{
+    -fx-font-size: 200%;
+}
+
+.button:hover
+{
+    -fx-background-color: #76B0B2;
+}
+
+.button
+{
+    -fx-background-color: lightseagreen;
+}
+
+.file
+{
+    -fx-font-size: 100%;
+    -fx-fill: deepskyblue;
+}
+
+.file:hover
+{
+    -fx-fill: #0095ff;
+}
